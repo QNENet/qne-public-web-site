@@ -3,7 +3,6 @@ package com.qnenet.views;
 import com.qnenet.data.User;
 import com.qnenet.security.AuthenticatedUser;
 import com.qnenet.views.aboutqne.AboutQNEView;
-import com.qnenet.views.aboutyou.AboutYouView;
 import com.qnenet.views.home.HomeView;
 import com.qnenet.views.join.JoinView;
 import com.qnenet.views.members.MembersView;
@@ -158,8 +157,6 @@ public class MainLayout extends AppLayout {
                 new MenuItemInfo("Home", LineAwesomeIcon.HOME_SOLID.create(), HomeView.class), //
 
                 new MenuItemInfo("About QNE", LineAwesomeIcon.INFO_CIRCLE_SOLID.create(), AboutQNEView.class), //
-
-                new MenuItemInfo("About You", LineAwesomeIcon.TH_SOLID.create(), AboutYouView.class), //
 
                 new MenuItemInfo("Join", LineAwesomeIcon.PERSON_BOOTH_SOLID.create(), JoinView.class), //
 
