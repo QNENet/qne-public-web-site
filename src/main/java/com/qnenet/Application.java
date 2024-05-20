@@ -1,5 +1,6 @@
 package com.qnenet;
 
+import com.github.valb3r.letsencrypthelper.tomcat.TomcatWellKnownLetsEncryptChallengeEndpointConfig;
 import com.qnenet.data.SamplePersonRepository;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.theme.Theme;
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.sql.init.SqlDataSourceScriptDatabaseInitializer;
 import org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 
 /**
  * The entry point of the Spring Boot application.
@@ -18,6 +20,7 @@ import org.springframework.context.annotation.Bean;
  * and some desktop browsers.
  *
  */
+@Import(TomcatWellKnownLetsEncryptChallengeEndpointConfig.class)
 @SpringBootApplication
 @Theme(value = "qnepublicwebsite", variant = Lumo.DARK)
 public class Application implements AppShellConfigurator {

@@ -28,7 +28,12 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
+
 
     <dependencyManagement>
         <dependencies>
@@ -92,6 +97,12 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-testbench-junit5</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.valb3r.letsencrypt-helper</groupId>
+            <artifactId>letsencrypt-helper-tomcat</artifactId>
+            <version>0.4.0</version>
         </dependency>
     </dependencies>
 
